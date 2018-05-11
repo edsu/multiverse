@@ -1,0 +1,29 @@
+ul.fork {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.fork li {
+  display: none;
+  cursor: pointer;
+  animation: fadein 1s;
+}
+
+.fork .selected {
+  display: inline;
+}
+
+.fork li.selected:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
