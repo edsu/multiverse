@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Owl and Girl</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="fork.js"></script>
+
+    <style>
+
+      body {
+        margin: 10px 20% 10px 20%;
+        font-size: 20pt;
+        font-family: "Adobe Caslon", Georgia;
+      }
+
+      button {
+        font-size: 14pt;
+        cursor: pointer;
+        background-color: lightgreen;
+      }
+
+      div.custom li {
+        text-decoration: none; 
+        color: blue;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        background: #333;
+        background-image: linear-gradient(to right, #333, #ccc, #ccc);
+      }
+
+      div {
+        padding: 10px;
+        border: thin solid gray;
+      }
+
+      code.hljs {
+        padding: 10px;
+        margin: 20px 0px 20px 0px;
+        background-color: #eee;
+      }
+
+      pre {
+        padding: 0px;
+        margin: 0px;
+        font-size: 14pt;
+      }
+
+      em {
+        font-weight: bold;
+      }
+
+      .fork img {
+        height: 30px;
+        vertical-align: middle;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Fork</h1>
+
+    <hr>
+
+
+    <!-- Basic Example -->
+
+    <h2>Basic Usage</h2>
+
+    First you'll need to import the <em>fork.js</em> library into your page.
+    You can load it from GitHub if you don't want to host it yourself.
+
+    <pre><code>&lt;script src="https://edsu.github.io/fork/fork.js"&gt;&lt;/script&gt;</code></pre>
+
+    Then mark up any <em>&lt;ul&gt;</em> elements you would like to fork with
+    the class <em>fork</em> which will automatically randomly select from
+    one of the options. When you click on the fork it will randomly
+    select one of the other options.
+
+    <pre><code>&lt;div&gt;
+
+An owl and a girl most
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;adventurous&lt;/li&gt;
+  &lt;li&gt;curious&lt;/li&gt;
+  &lt;li&gt;studious&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;set out&lt;/li&gt;
+  &lt;li&gt;set sail&lt;/li&gt;
+  &lt;li&gt;sailed away&lt;/li&gt;
+&lt;/ul&gt;
+
+in a
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;bottle-green&lt;/li&gt;
+  &lt;li&gt;beetle-green&lt;/li&gt;
+  &lt;li&gt;pea-green&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;boat;&lt;/li&gt;
+  &lt;li&gt;sieve;&lt;/li&gt;
+  &lt;li&gt;skiff;&lt;/li&gt;
+  &lt;li&gt;vessel;&lt;/li&gt;
+&lt;/ul&gt;
+
+a
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;beautiful&lt;/li&gt;
+  &lt;li&gt;shipshape&lt;/li&gt;
+  &lt;li&gt;sea worthy&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="fork"&gt;
+&lt;li&gt;craft,&lt;/li&gt;
+  &lt;li&gt;raft,&lt;/li&gt;
+  &lt;li&gt;wooden shoe,&lt;/li&gt;
+&lt;/ul&gt;
+
+certainly, though a
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;good deal&lt;/li&gt;
+  &lt;li&gt;wee bit&lt;/li&gt;
+  &lt;li&gt;tad&lt;/li&gt;
+&lt;/ul&gt;
+
+too
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;small&lt;/li&gt;
+  &lt;li&gt;high in the stern&lt;/li&gt;
+&lt;/ul&gt;
+
+to suit the two of them.
+
+&lt;/div&gt;</code></pre>
+
+    <p>
+      Which will result in this text being displayed:
+    </p>
+
+
+    <div>
+
+    An owl and a girl most
+
+    <ul class="fork">
+      <li>adventurous</li>
+      <li>curious</li>
+      <li>studious</li>
+    </ul>
+
+    <ul class="fork">
+      <li>set out</li>
+      <li>set sail</li>
+      <li>sailed away</li>
+    </ul>
+
+    in a
+
+    <ul class="fork">
+      <li>bottle-green</li>
+      <li>beetle-green</li>
+      <li>pea-green</li>
+    </ul>
+
+    <ul class="fork">
+      <li>boat;</li>
+      <li>sieve;</li>
+      <li>skiff;</li>
+      <li>vessel;</li>
+    </ul>
+
+    a
+
+    <ul class="fork">
+      <li>beautiful</li>
+      <li>shipshape</li>
+      <li>sea worthy</li>
+    </ul>
+
+    <ul class="fork">
+      <li>craft,</li>
+      <li>raft,</li>
+      <li>wooden shoe,</li>
+    </ul>
+
+    certainly, though a
+
+    <ul class="fork">
+      <li>good deal</li>
+      <li>wee bit</li>
+      <li>tad</li>
+    </ul>
+
+    too
+
+    <ul class="fork">
+      <li>small</li>
+      <li>high in the stern</li>
+    </ul>
+
+    to suit the two of them.
+
+    </div>
+
+
+    <!-- Timer Example -->
+
+
+    <h2>A Timer</h2>
+
+    <p>
+      If you would like one of your forks to automatically change on a
+      timer use the <em>data-fork-timer</em> attribute to set <thead>
+      number of milliseconds for the interval.
+    </p>
+
+    <pre><code>&lt;ul class="fork" data-fork-timer="3000"&gt;
+  &lt;li&gt;adventurous&lt;/li&gt;
+  &lt;li&gt;curious&lt;/li&gt;
+  &lt;li&gt;studious&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <div>
+
+    An owl and a girl most
+
+    <ul class="fork" data-fork-timer="3000">
+      <li>adventurous</li>
+      <li>curious</li>
+      <li>studious</li>
+    </ul>
+
+    <ul class="fork">
+      <li>set out</li>
+      <li>set sail</li>
+      <li>sailed away</li>
+    </ul>
+
+    in a
+
+    <ul class="fork">
+      <li>bottle-green</li>
+      <li>beetle-green</li>
+      <li>pea-green</li>
+    </ul>
+
+    <ul class="fork">
+      <li>boat;</li>
+      <li>sieve;</li>
+      <li>skiff;</li>
+      <li>vessel;</li>
+    </ul>
+
+    a
+
+    <ul class="fork">
+      <li>beautiful</li>
+      <li>shipshape</li>
+      <li>sea worthy</li>
+    </ul>
+
+    <ul class="fork">
+      <li>craft,</li>
+      <li>raft,</li>
+      <li>wooden shoe,</li>
+    </ul>
+
+    certainly, though a
+
+    <ul class="fork">
+      <li>good deal</li>
+      <li>wee bit</li>
+      <li>tad</li>
+    </ul>
+
+    too
+
+    <ul class="fork">
+      <li>small</li>
+      <li>high in the stern</li>
+    </ul>
+
+    to suit the two of them.
+
+    </div>
+
+
+    <!-- Style Example -->
+
+
+
+    <h2>Adding Some Style</h2>
+
+    <p>
+      You can override the appearance of your forked text by simply
+      providing your own CSS style. For example if you wanted all your
+      forks to be <span style="color: blue;">blue</span> and not
+      underlined:
+    </p>
+
+    <pre><code>&lt;style&gt;
+  ul.fork li {
+    text-decoration: none;
+    color: blue;
+  }
+&lt;/style&gt;
+
+...
+
+&lt;ul class="fork"&gt;
+  &lt;li&gt;adventurous&lt;/li&gt;
+  &lt;li&gt;curious&lt;/li&gt;
+  &lt;li&gt;studious&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <div class="custom">
+
+    An owl and a girl most
+
+    <ul class="fork">
+      <li>adventurous</li>
+      <li>curious</li>
+      <li>studious</li>
+    </ul>
+
+    <ul class="fork">
+      <li>set out</li>
+      <li>set sail</li>
+      <li>sailed away</li>
+    </ul>
+
+    in a
+
+    <ul class="fork">
+      <li>bottle-green</li>
+      <li>beetle-green</li>
+      <li>pea-green</li>
+    </ul>
+
+    <ul class="fork underline">
+      <li>boat;</li>
+      <li>sieve;</li>
+      <li>skiff;</li>
+      <li>vessel;</li>
+    </ul>
+
+    a
+
+    <ul class="fork">
+      <li>beautiful</li>
+      <li>shipshape</li>
+      <li>sea worthy</li>
+    </ul>
+
+    <ul class="fork">
+      <li>craft,</li>
+      <li>raft,</li>
+      <li>wooden shoe,</li>
+    </ul>
+
+    certainly, though a
+
+    <ul class="fork">
+      <li>good deal</li>
+      <li>wee bit</li>
+      <li>tad</li>
+    </ul>
+
+    too
+
+    <ul class="fork">
+      <li>small</li>
+      <li>high in the stern</li>
+    </ul>
+
+    to suit the two of them.
+
+    </div>
+
+
+    <!-- Button Example -->
+
+    <h2>Interaction</h2>
+
+    <p>
+      If you want to provide a control to set all the forks use <thead>
+      <em>Fork.init</em> function that gets imported into your page
+      when you load the <em>fork.js</em>.
+    </p>
+
+    <pre><code>&lt;button onclick="Fork.init()"&gt;Fork&lt;/button&gt;</code></pre>
+
+    <div id="button-example">
+
+    An owl and a girl most
+
+    <ul class="fork">
+      <li>adventurous</li>
+      <li>curious</li>
+      <li>studious</li>
+    </ul>
+
+    <ul class="fork">
+      <li>set out</li>
+      <li>set sail</li>
+      <li>sailed away</li>
+    </ul>
+
+    in a
+
+    <ul class="fork">
+      <li>bottle-green</li>
+      <li>beetle-green</li>
+      <li>pea-green</li>
+    </ul>
+
+    <ul class="fork">
+      <li>boat;</li>
+      <li>sieve;</li>
+      <li>skiff;</li>
+      <li>vessel;</li>
+    </ul>
+
+    a
+
+    <ul class="fork">
+      <li>beautiful</li>
+      <li>shipshape</li>
+      <li>sea worthy</li>
+    </ul>
+
+    <ul class="fork">
+      <li>craft,</li>
+      <li>raft,</li>
+      <li>wooden shoe,</li>
+    </ul>
+
+    certainly, though a
+
+    <ul class="fork">
+      <li>good deal</li>
+      <li>wee bit</li>
+      <li>tad</li>
+    </ul>
+
+    too
+
+    <ul class="fork">
+      <li>small</li>
+      <li>high in the stern</li>
+    </ul>
+
+    to suit the two of them.
+
+    </div>
+
+    <br>
+
+    <button onclick="Fork.init(document.getElementById('button-example'))">Fork</button>
+
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <h2>Images</h2>
+
+    <p>
+      Since fork just uses HTML you can put more than just text in your 
+      list. For examples links, or images:
+    </p>
+
+    <pre><code>&lt;ul class="fork"&gt;
+  &lt;li&gt;&lt;img src="images/craft.png"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src="images/raft.png"&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;img src="images/shoe.png"&gt;&lt;/li&gt;
+&lt;/ul&gt;&gt;</code></pre>
+
+    <div>
+
+    An owl and a girl most
+
+    <ul class="fork">
+      <li>adventurous</li>
+      <li>curious</li>
+      <li>studious</li>
+    </ul>
+
+    <ul class="fork">
+      <li>set out</li>
+      <li>set sail</li>
+      <li>sailed away</li>
+    </ul>
+
+    in a
+
+    <ul class="fork">
+      <li>bottle-green</li>
+      <li>beetle-green</li>
+      <li>pea-green</li>
+    </ul>
+
+    <ul class="fork">
+      <li>boat;</li>
+      <li>sieve;</li>
+      <li>skiff;</li>
+      <li>vessel;</li>
+    </ul>
+
+    a
+
+    <ul class="fork">
+      <li>beautiful</li>
+      <li>shipshape</li>
+      <li>sea worthy</li>
+    </ul>
+
+    <ul class="fork">
+      <li><img src="images/craft.png"></li>
+      <li><img src="images/raft.png"></li>
+      <li><img src="images/shoe.png"></li>
+    </ul>
+
+    certainly, though a
+
+    <ul class="fork">
+      <li>good deal</li>
+      <li>wee bit</li>
+      <li>tad</li>
+    </ul>
+
+    too
+
+    <ul class="fork">
+      <li>small</li>
+      <li>high in the stern</li>
+    </ul>
+
+    to suit the two of them.
+
+    </div>
+
+  </body>
+</html>
