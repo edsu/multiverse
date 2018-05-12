@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "publish": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "publish": "npm run build && git commit -m 'latest build' dist && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
