@@ -9,14 +9,11 @@ ul.fork {
   display: none;
   cursor: pointer;
   animation: fadein 1.5s;
+  text-decoration: underline;
 }
 
 .fork .selected {
   display: inline;
-}
-
-.fork li.selected:hover {
-  text-decoration: underline;
 }
 
 @keyframes fadein {

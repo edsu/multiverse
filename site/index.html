@@ -22,8 +22,8 @@
         background-color: lightgreen;
       }
 
-      .underline li {
-        text-decoration: underline;
+      div.custom li {
+        text-decoration: none; 
         color: blue;
       }
 
@@ -305,18 +305,18 @@ to suit the two of them.
 
 
 
-    <h2>Some Style</h2>
+    <h2>Adding Some Style</h2>
 
     <p>
       You can override the appearance of your forked text by simply
       providing your own CSS style. For example if you wanted all your
-      forks to be <span style="text-decoration: underline;">underlined</span>
-      and <span style="color: blue;">blue</span>;
+      forks to be <span style="color: blue;">blue</span> and not
+      underlined:
     </p>
 
     <pre><code>&lt;style&gt;
-  .fork li {
-    text-decoration: underline;
+  ul.fork li {
+    text-decoration: none;
     color: blue;
   }
 &lt;/style&gt;
@@ -329,7 +329,7 @@ to suit the two of them.
   &lt;li&gt;studious&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-    <div class="underline">
+    <div class="custom">
 
     An owl and a girl most
 
@@ -481,7 +481,8 @@ to suit the two of them.
     <h2>Images</h2>
 
     <p>
-      Since this is HTML you can put other things in your list than text.
+      Since fork just uses HTML you can put more than just text in your 
+      list. For examples links, or images:
     </p>
 
     <pre><code>&lt;ul class="fork"&gt;
