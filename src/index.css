@@ -8,7 +8,7 @@ ul.fork {
 .fork li {
   display: none;
   cursor: pointer;
-  animation: fadein 1s;
+  animation: fadein 1.5s;
 }
 
 .fork .selected {

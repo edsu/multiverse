@@ -5,7 +5,7 @@ const fork = require('./package.json')
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: `fork.${fork.version}.js`,
+    filename: `fork.js`,
     path: path.resolve(__dirname, './dist')
   },
   module: {

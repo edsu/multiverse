@@ -11,8 +11,9 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
-      inlineSource: '.(js|css)$'
+      filename: './src/index.html',
+      inlineSource: '.(js|css)$',
+      inject: false
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
