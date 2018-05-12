@@ -17,7 +17,7 @@ class Fork {
     if (this.ul.dataset.forkTimer) {
       this.setTimer(parseInt(this.ul.dataset.forkTimer))
     }
-    }
+  }
 
   choose() {
     const currentPos = this.reset()
