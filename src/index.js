@@ -1,6 +1,6 @@
 import style from './index.css'
 
-function init() {
+function initAll(e) {
   for (const ul of document.querySelectorAll('ul.fork')) {
     initFork(ul)
   }
@@ -36,4 +36,5 @@ function selectFork(ul, currentPos) {
   fork.onclick = (e) => {initFork(e.target.parentElement)}
 }
 
-document.addEventListener('DOMContentLoaded', init)
+document.addEventListener('DOMContentLoaded', initAll)
+global.Fork = initFork
