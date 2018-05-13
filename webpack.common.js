@@ -1,11 +1,10 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const path = require('path')
-const fork = require('./package.json')
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: `fork.js`,
+    filename: `multiverse.js`,
     path: path.resolve(__dirname, './dist')
   },
   module: {

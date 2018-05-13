@@ -1,18 +1,18 @@
-ul.fork {
+ul.multiverse {
   display: inline;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
 }
 
-.fork li {
+.multiverse li {
   display: none;
   cursor: pointer;
   animation: fadein 1.5s;
   text-decoration: underline;
 }
 
-.fork .selected {
+.multiverse .selected {
   display: inline;
 }
 

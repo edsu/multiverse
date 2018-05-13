@@ -1,7 +1,7 @@
 {
-  "name": "fork",
+  "name": "multiverse",
   "version": "0.0.1",
-  "description": "Writing in the multiverse.",
+  "description": "Writing HTML in the multiverse.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edsu/fork.git"
+    "url": "git+https://github.com/edsu/multiverse.git"
   },
   "author": "Ed Summers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/edsu/fork/issues"
+    "url": "https://github.com/edsu/multiverse/issues"
   },
-  "homepage": "https://github.com/edsu/fork#readme",
+  "homepage": "https://github.com/edsu/multiverse#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
