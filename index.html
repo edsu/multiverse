@@ -3,11 +3,11 @@
 
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fork.js</title>
+    <title>multiverse.js</title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="fork.js"></script>
+    <script src="multiverse.js"></script>
 
     <style>
 
@@ -20,10 +20,11 @@
       button {
         cursor: pointer;
         background-color: lightgreen;
+        font-size: 16pt;
       }
 
       div.custom li {
-        text-decoration: none; 
+        text-decoration: none;
         color: blue;
       }
 
@@ -54,7 +55,7 @@
         font-weight: bold;
       }
 
-      .fork img {
+      .multiverse img {
         height: 30px;
         vertical-align: middle;
       }
@@ -79,7 +80,7 @@
 
   <body>
 
-    <h1>fork.js</h1>
+    <h1>multiverse.js</h1>
 
     <hr>
 
@@ -88,27 +89,27 @@
 
     <h2>Basic Usage</h2>
 
-    First you'll need to import the <em>fork.js</em> library into your page.
+    First you'll need to import the <em>multiverse.js</em> library into your page.
     You can load it from GitHub if you don't want to host it yourself.
 
-    <pre><code>&lt;script src="https://edsu.github.io/fork/fork.js"&gt;&lt;/script&gt;</code></pre>
+    <pre><code>&lt;script src="https://edsu.github.io/multiverse/multiverse.js"&gt;&lt;/script&gt;</code></pre>
 
-    Then mark up any <em>&lt;ul&gt;</em> elements you would like to fork with
-    the class <em>fork</em> which will automatically randomly select from
-    one of the options. When you click on the fork it will randomly
+    Then mark up any <em>&lt;ul&gt;</em> elements you would like to multiverse with
+    the class <em>multiverse</em> which will automatically randomly select from
+    one of the options. When you click on the multiverse it will randomly
     select one of the other options.
 
     <pre><code>&lt;div&gt;
 
 An owl and a girl most
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;adventurous&lt;/li&gt;
   &lt;li&gt;curious&lt;/li&gt;
   &lt;li&gt;studious&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;set out&lt;/li&gt;
   &lt;li&gt;set sail&lt;/li&gt;
   &lt;li&gt;sailed away&lt;/li&gt;
@@ -116,13 +117,13 @@ An owl and a girl most
 
 in a
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;bottle-green&lt;/li&gt;
   &lt;li&gt;beetle-green&lt;/li&gt;
   &lt;li&gt;pea-green&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;boat;&lt;/li&gt;
   &lt;li&gt;sieve;&lt;/li&gt;
   &lt;li&gt;skiff;&lt;/li&gt;
@@ -131,13 +132,13 @@ in a
 
 a
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;beautiful&lt;/li&gt;
   &lt;li&gt;shipshape&lt;/li&gt;
   &lt;li&gt;sea worthy&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
 &lt;li&gt;craft,&lt;/li&gt;
   &lt;li&gt;raft,&lt;/li&gt;
   &lt;li&gt;wooden shoe,&lt;/li&gt;
@@ -145,7 +146,7 @@ a
 
 certainly, though a
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;good deal&lt;/li&gt;
   &lt;li&gt;wee bit&lt;/li&gt;
   &lt;li&gt;tad&lt;/li&gt;
@@ -153,7 +154,7 @@ certainly, though a
 
 too
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;small&lt;/li&gt;
   &lt;li&gt;high in the stern&lt;/li&gt;
 &lt;/ul&gt;
@@ -171,13 +172,13 @@ to suit the two of them.
 
     An owl and a girl most
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>adventurous</li>
       <li>curious</li>
       <li>studious</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>set out</li>
       <li>set sail</li>
       <li>sailed away</li>
@@ -185,13 +186,13 @@ to suit the two of them.
 
     in a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>bottle-green</li>
       <li>beetle-green</li>
       <li>pea-green</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>boat;</li>
       <li>sieve;</li>
       <li>skiff;</li>
@@ -200,13 +201,13 @@ to suit the two of them.
 
     a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>beautiful</li>
       <li>shipshape</li>
       <li>sea worthy</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>craft,</li>
       <li>raft,</li>
       <li>wooden shoe,</li>
@@ -214,7 +215,7 @@ to suit the two of them.
 
     certainly, though a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>good deal</li>
       <li>wee bit</li>
       <li>tad</li>
@@ -222,7 +223,7 @@ to suit the two of them.
 
     too
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>small</li>
       <li>high in the stern</li>
     </ul>
@@ -238,28 +239,28 @@ to suit the two of them.
     <h2>A Timer</h2>
 
     <p>
-      If you would like one of your forks to automatically change on a
-      timer use the <em>data-fork-timer</em> attribute to set <thead>
+      If you would like one of your multiverses to automatically change on a
+      timer use the <em>data-multiverse-timer</em> attribute to set <thead>
       number of milliseconds for the interval.
     </p>
 
-    <pre><code>&lt;ul class="fork" data-fork-timer="3000"&gt;
+    <pre><code>&lt;ul class="multiverse" data-multiverse-timer="3000"&gt;
   &lt;li&gt;adventurous&lt;/li&gt;
   &lt;li&gt;curious&lt;/li&gt;
   &lt;li&gt;studious&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-    <div>
+    <div style="height: 75px;">
 
     An owl and a girl most
 
-    <ul class="fork" data-fork-timer="3000">
+    <ul class="multiverse" data-multiverse-timer="3000">
       <li>adventurous</li>
       <li>curious</li>
       <li>studious</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>set out</li>
       <li>set sail</li>
       <li>sailed away</li>
@@ -267,13 +268,13 @@ to suit the two of them.
 
     in a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>bottle-green</li>
       <li>beetle-green</li>
       <li>pea-green</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>boat;</li>
       <li>sieve;</li>
       <li>skiff;</li>
@@ -282,13 +283,13 @@ to suit the two of them.
 
     a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>beautiful</li>
       <li>shipshape</li>
       <li>sea worthy</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>craft,</li>
       <li>raft,</li>
       <li>wooden shoe,</li>
@@ -296,7 +297,7 @@ to suit the two of them.
 
     certainly, though a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>good deal</li>
       <li>wee bit</li>
       <li>tad</li>
@@ -304,7 +305,7 @@ to suit the two of them.
 
     too
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>small</li>
       <li>high in the stern</li>
     </ul>
@@ -321,14 +322,14 @@ to suit the two of them.
     <h2>Adding Some Style</h2>
 
     <p>
-      You can override the appearance of your forked text by simply
+      You can override the appearance of your multiverseed text by simply
       providing your own CSS style. For example if you wanted all your
-      forks to be <span style="color: blue;">blue</span> and not
+      multiverses to be <span style="color: blue;">blue</span> and not
       underlined:
     </p>
 
     <pre><code>&lt;style&gt;
-  ul.fork li {
+  ul.multiverse li {
     text-decoration: none;
     color: blue;
   }
@@ -336,7 +337,7 @@ to suit the two of them.
 
 ...
 
-&lt;ul class="fork"&gt;
+&lt;ul class="multiverse"&gt;
   &lt;li&gt;adventurous&lt;/li&gt;
   &lt;li&gt;curious&lt;/li&gt;
   &lt;li&gt;studious&lt;/li&gt;
@@ -346,13 +347,13 @@ to suit the two of them.
 
     An owl and a girl most
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>adventurous</li>
       <li>curious</li>
       <li>studious</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>set out</li>
       <li>set sail</li>
       <li>sailed away</li>
@@ -360,13 +361,13 @@ to suit the two of them.
 
     in a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>bottle-green</li>
       <li>beetle-green</li>
       <li>pea-green</li>
     </ul>
 
-    <ul class="fork underline">
+    <ul class="multiverse underline">
       <li>boat;</li>
       <li>sieve;</li>
       <li>skiff;</li>
@@ -375,13 +376,13 @@ to suit the two of them.
 
     a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>beautiful</li>
       <li>shipshape</li>
       <li>sea worthy</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>craft,</li>
       <li>raft,</li>
       <li>wooden shoe,</li>
@@ -389,7 +390,7 @@ to suit the two of them.
 
     certainly, though a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>good deal</li>
       <li>wee bit</li>
       <li>tad</li>
@@ -397,7 +398,7 @@ to suit the two of them.
 
     too
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>small</li>
       <li>high in the stern</li>
     </ul>
@@ -412,24 +413,24 @@ to suit the two of them.
     <h2>Interaction</h2>
 
     <p>
-      If you want to provide a control to set all the forks use <thead>
-      <em>Fork.init</em> function that gets imported into your page
-      when you load the <em>fork.js</em>.
+      If you want to provide a control to set all the multiverses use <thead>
+      <em>multiverse.init</em> function that gets imported into your page
+      when you load the <em>multiverse.js</em>.
     </p>
 
-    <pre><code>&lt;button onclick="Fork.init()"&gt;Fork&lt;/button&gt;</code></pre>
+    <pre><code>&lt;button onclick="Multiverse.init()"&gt;New&lt;/button&gt;</code></pre>
 
     <div id="button-example">
 
     An owl and a girl most
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>adventurous</li>
       <li>curious</li>
       <li>studious</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>set out</li>
       <li>set sail</li>
       <li>sailed away</li>
@@ -437,13 +438,13 @@ to suit the two of them.
 
     in a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>bottle-green</li>
       <li>beetle-green</li>
       <li>pea-green</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>boat;</li>
       <li>sieve;</li>
       <li>skiff;</li>
@@ -452,13 +453,13 @@ to suit the two of them.
 
     a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>beautiful</li>
       <li>shipshape</li>
       <li>sea worthy</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>craft,</li>
       <li>raft,</li>
       <li>wooden shoe,</li>
@@ -466,7 +467,7 @@ to suit the two of them.
 
     certainly, though a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>good deal</li>
       <li>wee bit</li>
       <li>tad</li>
@@ -474,7 +475,7 @@ to suit the two of them.
 
     too
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>small</li>
       <li>high in the stern</li>
     </ul>
@@ -485,7 +486,7 @@ to suit the two of them.
 
     <br>
 
-    <button onclick="Fork.init(document.getElementById('button-example'))">Fork</button>
+    <button onclick="Multiverse.init(document.getElementById('button-example'))">New</button>
 
     <script>
       hljs.initHighlightingOnLoad();
@@ -494,11 +495,11 @@ to suit the two of them.
     <h2>Images</h2>
 
     <p>
-      Since fork just uses HTML you can put more than just text in your 
+      Since multiverse just uses HTML you can put more than just text in your
       list. For examples links, or images:
     </p>
 
-    <pre><code>&lt;ul class="fork"&gt;
+    <pre><code>&lt;ul class="multiverse"&gt;
   &lt;li&gt;&lt;img src="images/craft.png"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="images/raft.png"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="images/shoe.png"&gt;&lt;/li&gt;
@@ -508,13 +509,13 @@ to suit the two of them.
 
     An owl and a girl most
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>adventurous</li>
       <li>curious</li>
       <li>studious</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>set out</li>
       <li>set sail</li>
       <li>sailed away</li>
@@ -522,13 +523,13 @@ to suit the two of them.
 
     in a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>bottle-green</li>
       <li>beetle-green</li>
       <li>pea-green</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>boat;</li>
       <li>sieve;</li>
       <li>skiff;</li>
@@ -537,13 +538,13 @@ to suit the two of them.
 
     a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>beautiful</li>
       <li>shipshape</li>
       <li>sea worthy</li>
     </ul>
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li><img src="images/craft.png"></li>
       <li><img src="images/raft.png"></li>
       <li><img src="images/shoe.png"></li>
@@ -551,7 +552,7 @@ to suit the two of them.
 
     certainly, though a
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>good deal</li>
       <li>wee bit</li>
       <li>tad</li>
@@ -559,7 +560,7 @@ to suit the two of them.
 
     too
 
-    <ul class="fork">
+    <ul class="multiverse">
       <li>small</li>
       <li>high in the stern</li>
     </ul>
