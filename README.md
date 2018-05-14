@@ -1,3 +1,3 @@
 See the [docs].
 
-[docs]: https://github.com/edsu/multiverse
+[docs]: https://edsu.github.io/multiverse
