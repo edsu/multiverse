@@ -60,11 +60,18 @@
         vertical-align: middle;
       }
 
+      #timer {
+        height: 102pt;
+      }
+
 			@media only screen and (min-width: 600px) {
 				/* tablets */
 				body {
 					margin: 20px 25% 5% 25%;
 				}
+        #timer {
+          height: 52pt;
+        }
 			}
 
 			@media only screen and (min-width: 768px) {
@@ -72,6 +79,9 @@
 				body {
 					margin: 20px 25% 5% 25%;
 				}
+        #timer {
+          height: 52pt;
+        }
 			}
 
     </style>
@@ -80,7 +90,122 @@
 
   <body>
 
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+
     <h1>multiverse.js</h1>
+
+    <p>
+    The <a href="https://aeon.co/essays/can-the-multiverse-explain-the-course-of-history">multiverse</a> is
+    the idea that the universe we live in is just one of an infinite number
+    of possible universes. One way of thinking about this is to consider how every
+    decision you make entails a series of other possibilities, or roads not taken,
+    which fork off from our current universe.
+    </p>
+
+    <p>
+    The multiverse has a literary equivalent in
+    <a href="https://en.wikipedia.org/wiki/Hypertext_fiction">hypertext fiction</a>,
+    which allows a linear narrative to fork in different directions
+    using the hyperlinks and the reader's ability to choose which ones
+    to follow.
+    </p>
+
+    <p>
+    <a href="https://en.wikipedia.org/wiki/J.R._Carpenter">J.R. Carpenter</a>'s recent
+    <a href="http://www.pennedinthemargins.co.uk/index.php/2018/03/an-ocean-of-static/">Ocean of Static</a>
+    builds on this idea of a generative text by using a particular notation that
+    presents the various possibilities for a reading. If you are familiar with
+    the idea of an array or a list in a programming language you will recognize
+    this syntax.
+    </p>
+
+    <img style="border: thin solid #ddd" src="images/ocean-of-static.png">
+
+    <p>
+      You can hear Carpenter <a href="https://www.youtube.com/watch?v=lhoDdhc2ei4">reading</a>
+      this section in which she selects from the various possibilities. The
+      <a href="http://luckysoap.com/owlandgirl/">online version</a> itself
+      will automatically select from the various possibilities, which collapse
+      into one reading of the text.
+    </p>
+
+    <p>
+      <em>multiverse.js</em> is a small JavaScript library that lets you write
+      generative text using HTML lists. Normally an unordered list
+      <em>&lt;ul&gt;</em> will display list element as part of a bulleted
+      list. But when you use <em>multiverse.js</em> the list will randomly
+      collapse into one possibility. For example, try reloading this page
+      and see how the following text changes.
+    </p>
+
+    <div class="multiverse">
+
+    An owl and a girl most
+
+    <ul class="multiverse">
+      <li>adventurous</li>
+      <li>curious</li>
+      <li>studious</li>
+    </ul>
+
+    <ul class="multiverse">
+      <li>set out</li>
+      <li>set sail</li>
+      <li>sailed away</li>
+    </ul>
+
+    in a
+
+    <ul class="multiverse">
+      <li>bottle-green</li>
+      <li>beetle-green</li>
+      <li>pea-green</li>
+    </ul>
+
+    <ul class="multiverse">
+      <li>boat;</li>
+      <li>sieve;</li>
+      <li>skiff;</li>
+      <li>vessel;</li>
+    </ul>
+
+    a
+
+    <ul class="multiverse">
+      <li>beautiful</li>
+      <li>shipshape</li>
+      <li>sea worthy</li>
+    </ul>
+
+    <ul class="multiverse">
+      <li>craft,</li>
+      <li>raft,</li>
+      <li>wooden shoe,</li>
+    </ul>
+
+    certainly, though a
+
+    <ul class="multiverse">
+      <li>good deal</li>
+      <li>wee bit</li>
+      <li>tad</li>
+    </ul>
+
+    too
+
+    <ul class="multiverse">
+      <li>small</li>
+      <li>high in the stern</li>
+    </ul>
+
+    to suit the two of them.
+
+    </div>
+
+    <p>
+    Read on below for the details of how to do this, and for enabling
+    things like timers, images, etc.
+    </p>
 
     <hr>
 
@@ -164,7 +289,7 @@ to suit the two of them.
 &lt;/div&gt;</code></pre>
 
     <p>
-      Which will result in this text being displayed:
+      Which will result in this text (among others) being displayed:
     </p>
 
 
@@ -250,7 +375,7 @@ to suit the two of them.
   &lt;li&gt;studious&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
 
-    <div style="height: 75px;">
+    <div id="timer">
 
     An owl and a girl most
 
