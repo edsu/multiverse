@@ -64,23 +64,19 @@
         height: 102pt;
       }
 
+      #github {
+        display: none;
+      }
+
 			@media only screen and (min-width: 600px) {
-				/* tablets */
 				body {
 					margin: 20px 25% 5% 25%;
 				}
         #timer {
           height: 52pt;
         }
-			}
-
-			@media only screen and (min-width: 768px) {
-				/* desktop */
-				body {
-					margin: 20px 25% 5% 25%;
-				}
-        #timer {
-          height: 52pt;
+        #github {
+          display: inline;
         }
 			}
 
@@ -90,7 +86,7 @@
 
   <body>
 
-    <a href="https://github.com/edsu/multiverse"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
+    <a href="https://github.com/edsu/multiverse"><img id="github" style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png" alt="Fork me on GitHub"></a>
 
     <h1>multiverse.js</h1>
 
