@@ -8,19 +8,9 @@ ul.multiverse {
 .multiverse li {
   display: none;
   cursor: pointer;
-  animation: fadein 1.5s;
   text-decoration: underline;
 }
 
 .multiverse .selected {
   display: inline;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
