@@ -3,7 +3,6 @@ import style from './index.css'
 class Multiverse {
 
   static init(e) {
-    console.log('init')
     if (!e) {
       e = document
     }
@@ -60,9 +59,9 @@ class Multiverse {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (! global.__MULTIVERSE_LOADED) {
+  if (! window.__MULTIVERSE_LOADED) {
     Multiverse.init(document)
-    global.__MULTIVERSE_LOADED = true
+    window.__MULTIVERSE_LOADED = true
   }
 })
 
