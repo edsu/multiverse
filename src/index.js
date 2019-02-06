@@ -65,4 +65,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 })
 
-global.Multiverse = Multiverse
+window.Multiverse = Multiverse
