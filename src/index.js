@@ -3,6 +3,7 @@ import style from './index.css'
 class Multiverse {
 
   static init(e) {
+    console.log('init')
     if (!e) {
       e = document
     }
